@@ -1,0 +1,137 @@
+
+body {
+    background-color: #1695DA;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title-box {
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    padding: 50px;
+    top: 180px;
+    box-shadow: 6px 6px 0.1px 1px rgba(0, 0, 0, .1);
+}
+
+header h1 {
+    font-size: 80px;
+}
+
+header p {
+    font-size: 25px;
+}
+
+header h1, p {
+    font-family: 'kenia', cursive;
+}
+
+/* slider */
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: calc(500px * 4);
+    height: 720px;
+    animation: glisse 10s infinite ease;
+}
+
+.slide {
+    opacity: 0.5;
+}
+
+
+@keyframes glisse {
+    0%{
+        transform: translateX(0);
+    }
+
+    33%{
+        transform: translateX(100px);
+    }
+
+    66%{
+        transform: translateX(-100px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+    
+}
+
+/* navigation menu */
+
+.section-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: translateY(-130px);
+}
+
+nav.menu {
+    width: calc(500px * 4);
+}
+
+nav.menu ul{
+    display: flex;
+}
+
+nav.menu ul li{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s all;
+}
+
+nav.menu ul li:hover {
+    transform: scale(0.90);
+    transition: 1s all;
+}
+
+nav.menu ul li a {
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.nav-item {
+    flex: 1;
+    height: 300px;
+}
+
+
+
+.pizza {
+    background: url(../CroustiShop/pizza-banner.jpg) 100%;
+    background-repeat: no-repeat;
+}
+
+.Salade {
+    background: url(../CroustiShop/salad-banner.jpg) 100%;
+    background-repeat: no-repeat;
+}
+
+.Burger {
+    background: url(../CroustiShop/burger-banner.jpg) 100%;
+    background-repeat: no-repeat;
+}
+
+.Boissons {
+    background: url(../CroustiShop/boisson-banner.jpg) 100%;
+    background-repeat: no-repeat;
+}
+
